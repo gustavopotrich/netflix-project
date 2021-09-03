@@ -1,0 +1,122 @@
+:root{
+    --vermelho:#E50914;
+    --preto:#141414;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+body{
+   background: var(--preto);
+   font-family: 'Arial', Times, serif;
+   color:white;
+}
+
+
+header .container{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 2rem 2rem 0;
+}
+
+header .logo{
+    margin-left: 3rem;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size:40px;
+    cursor: pointer;
+}
+
+header nav a{
+    text-decoration:none;
+    color:#fafafa;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color:#fff;
+}
+
+/*filme principal*/
+.filme-principal{
+    font-size:16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%),  url('../img/capa-interstellar.jpg');
+    background-size:cover;
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 50rem;
+}
+
+
+.filme-principal .descricao{
+    margin-top: 20px;
+    margin-bottom: 40px; 
+    text-indent: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+.filme-principal .filme-info{
+    margin-bottom: 40px; 
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.filme-principal .titulo{
+    margin-top: 12%;
+    font-size: 52px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.botao{
+    background-color: rgba(66, 66, 66, 0.5);
+    border:none;
+    color: #fafafa;
+    padding:15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.botao:hover{
+    background-color:black;
+    color:white;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+
+.container{
+    text-align: justify;
+    margin-left: 1rem;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+
+.carrosel-filmes{
+    margin-top:5px;
+}
